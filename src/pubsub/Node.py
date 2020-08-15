@@ -9,7 +9,6 @@ class Node:
         self._subscribers = list()
         self._blockchain = Blockchain(2, 3)
 
-
     def add_publisher(self, publisher):
         
         for pub in self._publishers:
@@ -30,6 +29,7 @@ class Node:
                 if follow.address == publisher.address:
                     sub.receive("{}! from {}".format(message, publisher.address))
                     break
+
 
 if __name__ == '__main__':
     node = Node()
