@@ -1,5 +1,5 @@
-from Block import Block
-from Transaction import Transaction
+from src.blockchain_core.Transaction import Transaction
+from src.blockchain_core.Block import Block
 
 class Blockchain:
 
